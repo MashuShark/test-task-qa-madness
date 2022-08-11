@@ -31,8 +31,6 @@ public class LoginTest extends BaseTest {
         List<Object[]> testData = new ArrayList<>();
         testData.add(new Object[]{"testgmailcom"});
         testData.add(new Object[]{"testgmail.com"});
-//        testData.add(new Object[]{"test@@gmail.net"});
-//       testData.add(new Object[]{"abc@mail..com"});
         testData.add(new Object[]{"abc#def@mail.com"});
         return testData.toArray(new Object[][]{});
     }

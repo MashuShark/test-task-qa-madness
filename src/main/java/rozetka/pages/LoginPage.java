@@ -17,11 +17,11 @@ public class LoginPage extends BasePage {
     private WebElement inputPasswordField;
     @FindBy(xpath = "//label[contains(@class,'remember-checkbox')]")
     private WebElement rememberCheckbox;
-    @FindBy(xpath = "//button[contains(text(),'Увійти')]")
+    @FindBy(xpath = "//button[contains(@class,'auth-modal__submit')]")
     private WebElement loginButton;
-    @FindBy(xpath = "//button[contains(text(),'Зареєструватися')]")
+    @FindBy(xpath = "//button[contains(@class,'button--link')]")
     private WebElement registerButton;
-    @FindBy(xpath = "//a[contains(text(),'Нагадати пароль')]")
+    @FindBy(xpath = "//a[contains(@class,'auth-modal__restore-link')]")
     private WebElement remindPasswordButton;
 
     public LoginPage(WebDriver driver) {
